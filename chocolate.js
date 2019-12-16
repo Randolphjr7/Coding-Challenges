@@ -6,7 +6,7 @@ If input data is invalid you should return 0 (as in no breaks are needed if we d
 
 // the breaking of the chocolate is done manually with your hand
 function breakChocolate(n,m) {
-  if((typeof(n * m) === 'number')) {
+  if((typeof(n * m) === 'number') && (n*m !== 0)) {
     return n * m - 1;
   }
   return 0;
