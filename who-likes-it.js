@@ -11,6 +11,7 @@ likes ["Max", "John", "Mark"] // must be "Max, John and Mark like this"
 likes ["Alex", "Jacob", "Mark", "Max"] // must be "Alex, Jacob and 2 other like this" 
 */
 
+// My Solution
 function likes(names){
 
   let result = "no one likes this"
@@ -47,8 +48,9 @@ let test5 = ["alex", "peter", "john", "randy"];
 likes(test4);
 
 
-// Best Practice 
+ 
 /*
+// Best Practice
 function likes(names) {
   names = names || [];
   switch(names.length){
