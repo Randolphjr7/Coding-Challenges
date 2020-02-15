@@ -4,12 +4,13 @@ using a space between words.
 Example
 solution('camelCasing') // => should return 'camel Casing */
 
-
 function solution(string) {
-  return string.split('').map(function(letter) {
-    return letter === letter.toUpperCase() ? (" " + letter) : letter
-  }).join('');
+  return string
+    .split("")
+    .map(function(letter) {
+      return letter === letter.toUpperCase() ? " " + letter : letter;
+    })
+    .join("");
 }
 
-
-solution('camelCasing')
+console.log(solution("camelCasing"));
